@@ -1,0 +1,51 @@
+# Geotechnical Engineering — Newcastle
+
+> Geotechnical engineering services in Newcastle, United Kingdom.
+
+## Services
+- [Anchors](https://newcastle.geotechnical-engineering.biz/anchors/)
+- [Atterberg Limits](https://newcastle.geotechnical-engineering.biz/atterberg-limits/)
+- [Cbr Road](https://newcastle.geotechnical-engineering.biz/cbr-road/)
+- [Cpt Test](https://newcastle.geotechnical-engineering.biz/cpt-test/)
+- [Deep Excavations](https://newcastle.geotechnical-engineering.biz/deep-excavations/)
+- [Excavation Monitoring](https://newcastle.geotechnical-engineering.biz/excavation-monitoring/)
+- [Excavations](https://newcastle.geotechnical-engineering.biz/excavations/)
+- [Flexible Pavement](https://newcastle.geotechnical-engineering.biz/flexible-pavement/)
+- [Footings](https://newcastle.geotechnical-engineering.biz/footings/)
+- [Foundations](https://newcastle.geotechnical-engineering.biz/foundations/)
+- [Grain Size](https://newcastle.geotechnical-engineering.biz/grain-size/)
+- [Ground Improvement](https://newcastle.geotechnical-engineering.biz/ground-improvement/)
+- [Grouting](https://newcastle.geotechnical-engineering.biz/grouting/)
+- [In Situ Permeability](https://newcastle.geotechnical-engineering.biz/in-situ-permeability/)
+- [Investigation](https://newcastle.geotechnical-engineering.biz/investigation/)
+- [Lab In Situ](https://newcastle.geotechnical-engineering.biz/lab-in-situ/)
+- [Laboratory](https://newcastle.geotechnical-engineering.biz/laboratory/)
+- [Liquefaction](https://newcastle.geotechnical-engineering.biz/liquefaction/)
+- [Masw](https://newcastle.geotechnical-engineering.biz/masw/)
+- [Mat Foundations](https://newcastle.geotechnical-engineering.biz/mat-foundations/)
+- [Piles](https://newcastle.geotechnical-engineering.biz/piles/)
+- [Proctor Tests](https://newcastle.geotechnical-engineering.biz/proctor-tests/)
+- [Resistivity](https://newcastle.geotechnical-engineering.biz/resistivity/)
+- [Retaining Walls](https://newcastle.geotechnical-engineering.biz/retaining-walls/)
+- [Rigid Pavement](https://newcastle.geotechnical-engineering.biz/rigid-pavement/)
+- [Road Geotechnics](https://newcastle.geotechnical-engineering.biz/road-geotechnics/)
+- [Sand Cone Density](https://newcastle.geotechnical-engineering.biz/sand-cone-density/)
+- [Seismic](https://newcastle.geotechnical-engineering.biz/seismic/)
+- [Seismic Isolation](https://newcastle.geotechnical-engineering.biz/seismic-isolation/)
+- [Seismic Microzonation](https://newcastle.geotechnical-engineering.biz/seismic-microzonation/)
+- [Seismic Refraction](https://newcastle.geotechnical-engineering.biz/seismic-refraction/)
+- [Slope Stability](https://newcastle.geotechnical-engineering.biz/slope-stability/)
+- [Slopes](https://newcastle.geotechnical-engineering.biz/slopes/)
+- [Soft Ground Tunnels](https://newcastle.geotechnical-engineering.biz/soft-ground-tunnels/)
+- [Spt Drilling](https://newcastle.geotechnical-engineering.biz/spt-drilling/)
+- [Stone Columns](https://newcastle.geotechnical-engineering.biz/stone-columns/)
+- [Test Pits](https://newcastle.geotechnical-engineering.biz/test-pits/)
+- [Triaxial](https://newcastle.geotechnical-engineering.biz/triaxial/)
+- [Vibrocompaction](https://newcastle.geotechnical-engineering.biz/vibrocompaction/)
+
+## Contact
+- Website: https://newcastle.geotechnical-engineering.biz/
+
+## About
+This site provides geotechnical engineering services in Newcastle, United Kingdom.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).
