@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -96,7 +101,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -105,7 +110,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -120,16 +125,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"Underground excavations in Newcastle must contend with the complex ground conditions shaped by the region’s Coal Measures strata, glacial till, and alluvia","@id":"https://newcastle.geotechnical-engineering.biz/excavations/","isPartOf":{"url":"https://newcastle.geotechnical-engineering.biz","@id":"https://newcastle.geotechnical-engineering.biz/#website","@type":"WebSite"},"@type":"WebPage","inLanguage":"en","url":"https://newcastle.geotechnical-engineering.biz/excavations/","name":"Underground Excavations in Newcastle – UK"},{"itemListElement":[{"name":"Home","item":"https://newcastle.geotechnical-engineering.biz/","@type":"ListItem","position":1},{"name":"Underground Excavations","item":"https://newcastle.geotechnical-engineering.biz/excavations/","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"Geotechnical analysis for soft soil tunnels","url":"https://newcastle.geotechnical-engineering.biz/soft-ground-tunnels/","@type":"ListItem","position":1},{"name":"Geotechnical design of deep excavations","url":"https://newcastle.geotechnical-engineering.biz/deep-excavations/","@type":"ListItem","position":2},{"name":"Geotechnical excavation monitoring","url":"https://newcastle.geotechnical-engineering.biz/excavation-monitoring/","@type":"ListItem","position":3}],"@type":"ItemList","name":"Underground Excavations"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../soft-ground-tunnels/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical analysis for soft soil tunnels</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../deep-excavations/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical design of deep excavations</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../excavation-monitoring/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical excavation monitoring</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/estudio-mecanica-suelos-3.webp" alt="Underground Excavations in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Underground excavations in Newcastle upon Tyne must contend with a complex and highly variable geological legacy. The city is underlain by Carboniferous Coal Measures – interbedded sandstones, mudstones, siltstones, and historically worked coal seams – overlain by a mantle of glacial till, river terrace deposits, and made ground from centuries of industrial activity. Any deep excavation, whether for basements, shafts, or tunnels, requires a thorough understanding of these strata, particularly the presence of abandoned mine workings, variable rockhead depths, and groundwater perched within superficial deposits. A robust <a href="/investigation/">ground investigation</a> is the essential first step, integrating techniques like <a href="/cpt-test/">Cone Penetration Testing (CPT)</a> to map soil consistency and detect voids, ensuring compliance with BS 5930 and the specific requirements of the North East region.</p>
+<p>The methodology for designing and executing safe underground works in the UK is governed by a strict hierarchy of standards, led by Eurocode 7 (BS EN 1997-2) and the CDM Regulations 2015. A compliant approach moves from desk study and intrusive investigation to rigorous laboratory characterisation. We determine the fundamental mechanical properties of the glacial till and Coal Measures through advanced <a href="/lab-in-situ/">in-situ testing</a> and precise <a href="/laboratory/">laboratory analysis</a>. This includes <a href="/atterberg-limits/">Atterberg limits</a> to define the plasticity behaviour of cohesive soils, which is critical for predicting excavation face stability and ground movement, and <a href="/grain-size/">grain size analysis</a> by sieve and hydrometer to classify granular materials and assess permeability for dewatering design. These parameters are non-negotiable for developing a reliable ground model.</p>
+<p>Typical projects in Newcastle demanding this level of geotechnical rigour are diverse. They range from deep commercial basements in the city centre, often penetrating made ground and river gravels into the underlying till, to infrastructure schemes like the replacement of Victorian-era utilities and the stabilisation of shallow mine workings beneath new residential developments. The construction of deep shafts for the North East’s expanding district heating networks is another key application. Each scenario relies on accurate material parameters, such as the in-situ density of compacted backfill or natural granular soils, which we verify using the <a href="/sand-cone-density/">sand cone density test</a>. This field measurement is indispensable for quality assurance on earthworks and backfilling around underground structures, preventing future settlement.</p>
+<img src="/img/estudio-mecanica-suelos-1.webp" alt="Underground Excavations in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process delivers certainty from the ground down. We interpret all field and laboratory data to produce a comprehensive Ground Investigation Report with a clear geotechnical model, highlighting hazards such as abandoned mines or aggressive ground conditions. Deliverables include a factual report, geotechnical evaluation, and specific design parameters for temporary and permanent works. For contractors and consulting engineers in Newcastle, this integrated service—from initial investigation to final parameter selection—provides a single, technically defensible source of truth, de-risking underground construction and ensuring projects remain on programme and budget.</p></div></section></main>
     </div>
 </div>
 

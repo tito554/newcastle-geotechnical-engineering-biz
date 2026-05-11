@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -96,7 +101,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -105,7 +110,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -120,16 +125,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"Ground investigation in Newcastle must address the complex geological legacy of coal measures, glacial till, and alluvial deposits along the Tyne Valley. A","@id":"https://newcastle.geotechnical-engineering.biz/investigation/","isPartOf":{"url":"https://newcastle.geotechnical-engineering.biz","@id":"https://newcastle.geotechnical-engineering.biz/#website","@type":"WebSite"},"@type":"WebPage","inLanguage":"en","url":"https://newcastle.geotechnical-engineering.biz/investigation/","name":"Investigation in Newcastle – UK"},{"itemListElement":[{"name":"Home","item":"https://newcastle.geotechnical-engineering.biz/","@type":"ListItem","position":1},{"name":"Investigation","item":"https://newcastle.geotechnical-engineering.biz/investigation/","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"CPT (Cone Penetration Test)","url":"https://newcastle.geotechnical-engineering.biz/cpt-test/","@type":"ListItem","position":1}],"@type":"ItemList","name":"Investigation"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../cpt-test/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CPT (Cone Penetration Test)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/calicatas-exploratorias-3.webp" alt="Investigation in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Ground investigation in Newcastle upon Tyne must account for the region’s complex glacial and post-glacial geology, which includes thick sequences of glacial till, laminated clays, sands, and gravels overlying the Carboniferous Coal Measures. A robust <a href="/investigation/">desk study and intrusive investigation</a> is essential to characterise these variable deposits and identify hazards such as shallow mine workings, made ground from historic industrial activity, and compressible alluvial soils along the Tyne and Ouseburn corridors. All phases of work are governed by BS 5930:2015+A1:2020 (Code of practice for ground investigations) and the requirements of the Tyne and Wear validation checklist, ensuring the factual and interpretative data meet local planning and building control standards.</p>
+<p>Our field methodology integrates conventional boring and trial pitting with high-resolution in-situ techniques to build a defensible ground model. The <a href="/cpt-test/">Cone Penetration Test (CPT)</a> provides a near-continuous profile of tip resistance, sleeve friction, and pore pressure, which is particularly valuable for delineating soft clay lenses and the base of the glacial till. These electronic soundings are complemented by disturbed and undisturbed sampling for subsequent <a href="/laboratory/">laboratory classification and strength testing</a>, including <a href="/atterberg-limits/">Atterberg limit determination</a> to assess plasticity characteristics of cohesive soils. Where granular strata dominate, <a href="/grain-size/">particle size distribution via sieving and sedimentation hydrometer</a> quantifies the grading envelope, and in-situ density is verified using the <a href="/sand-cone-density/">sand cone method</a> for engineered fill and formation level inspections. All field operations comply with the technical execution clauses of BS EN ISO 22475-1, and laboratory testing is carried out to BS 1377:2022.</p>
+<p>Newcastle’s typical project profile spans city-centre brownfield redevelopments on former industrial land, riverside student accommodation schemes overlying variable alluvium, and transport infrastructure within cuttings through glacial till. For a high-rise residential block atop the Coal Measures, the investigation sequence would confirm bedrock depth and integrity, assess groundwater regime through standpipe piezometers, and quantify any methane risk associated with the underlying coal seams. A logistics warehouse on a greenfield site near the A1 requires rigorous compaction verification via field density testing, while a sewer diversion in the quayside area demands careful logging of made ground and assessment of sulphate and pH aggressivity to buried concrete in accordance with BRE Special Digest 1.</p>
+<img src="/img/ensayo-cbr-4.webp" alt="Investigation in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>A focused investigation programme begins with a Phase 1 desk study to inform the scope of intrusive works, followed by fieldwork, laboratory scheduling, and production of a fully interpretative Geotechnical and Geo-environmental Interpretative Report. The deliverable includes a conceptual site model, characteristic values for all relevant strata, and clear recommendations for <a href="/foundations/">foundation design</a>, earthworks specification, and environmental management. This integrated approach, delivered by engineers with detailed local geological knowledge, de-risks ground-related claims and provides the certainty required for safe, cost-efficient construction in Newcastle.</p></div></section></main>
     </div>
 </div>
 

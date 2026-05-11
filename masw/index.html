@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -99,7 +104,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -108,7 +113,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -123,16 +128,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
 
             <section>
                 <h2>Critical ground factors in Newcastle</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Newcastle's post-industrial landscape carries a legacy that directly influences seismic hazard assessment. The city expanded rapidly during the 19th century, with mining beneath what are now residential districts like Heaton and Byker — areas where shallow workings and backfilled shafts create artificial velocity anomalies that can skew a naive VS30 interpretation. A site classified as Class C on paper may behave locally as Class D if an undocumented drift mine runs beneath it at 15 metres depth. Our surveys incorporate a careful review of Coal Authority mining reports alongside the geophysical data, because a sudden velocity inversion in the top 30 metres is often a tell-tale sign of unconsolidated backfill rather than natural stratigraphy. The risk of misclassifying a site class is not theoretical: we have seen projects where an overly optimistic VS30 value led to an under-designed foundation, requiring costly remediation when ground truth emerged during excavation. Complementing MASW with targeted <a data-interlink="1" href="/test-pits/">test pits</a> in suspect zones helps ground-truth the near-surface materials and refine the velocity model before it reaches the structural engineer's desk.</p>
             </section>
 
@@ -201,6 +210,8 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
 
             <section>
                 <h2>Q&A</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What does a MASW survey in Newcastle typically cost?</summary><p>For a standard active-source MASW survey at a residential or commercial plot within the Newcastle area, budgets usually fall between £1,210 and £2,850 plus VAT. The final figure depends on the array length needed to reach 30 metres, the number of shot points, and whether passive-source recording is required for deeper penetration. We provide a fixed-price proposal after reviewing the site location and the Coal Authority mining report.</p></details><details><summary>Which Seismic Site Class is most common in Newcastle?</summary><p>There is no single answer — Newcastle's geology varies sharply. Sites on the Fell Sandstone in areas like Heaton or Jesmond often classify as Site Class B, while the thick glacial till in Gosforth and the alluvial deposits along the Ouseburn and Tyne quayside typically fall into Class C or D. The key is the shear wave velocity of the weakest 30-metre interval, and we have measured VS30 values ranging from 180 m/s in soft river silts to over 700 m/s in competent sandstone.</p></details><details><summary>How long does a MASW survey take on site, and will it disturb neighbours?</summary><p>A typical active-source MASW survey across a single array takes two to four hours on site, depending on ground conditions and access. The source is a sledgehammer striking an aluminium plate, which generates a surface thud — noticeably quieter than percussive drilling or dynamic compaction. In dense urban settings like Sandyford or Fenham, we brief adjacent residents in advance and position the array to minimise nuisance, and the equipment is removed the same day.</p></details>
             </section>
 

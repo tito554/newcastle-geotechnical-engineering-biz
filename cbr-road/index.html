@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -99,7 +104,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -108,7 +113,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -123,16 +128,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
 
             <section>
                 <h2>Critical ground factors in Newcastle</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>In Newcastle, we see one pattern repeat itself on road reconstruction jobs: the site investigation logs a stiff boulder clay at 3 metres, the design assumes CBR 5%, and then a wet autumn hits during earthworks and the exposed formation turns to slurry within hours. A laboratory CBR test performed only on unsoaked samples will miss that sensitivity entirely. When the DMRB requires a soaked CBR for cohesive subgrades, skipping that step means the pavement ends up under-designed for the worst-case groundwater condition. The cost of a failed pavement on a bus lane along Westgate Road or a logistics yard in Blaydon is orders of magnitude higher than the lab programme that would have flagged the problem during design. We always ask whether the formation will be trafficked during construction, because remoulding under site plant can knock the in-situ CBR down to half the lab value.</p>
             </section>
 
@@ -201,6 +210,8 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
 
             <section>
                 <h2>Q&A</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How much does a laboratory CBR test cost in Newcastle?</summary><p>A single-point laboratory CBR test typically costs between £80 and £160, depending on whether soaking is required and how many compaction points are included in the programme. We provide a fixed-price quote once we have the project specification and the material type.</p></details><details><summary>What is the difference between soaked and unsoaked CBR?</summary><p>An unsoaked CBR measures the strength of the material at its as-compacted moisture content, while a soaked CBR involves submerging the specimen in water for four days under a surcharge load before testing. The soaked value represents the worst-case condition when the water table rises or surface water infiltrates the pavement foundation, and DMRB CD 225 requires soaked values for cohesive subgrades.</p></details><details><summary>How many CBR specimens do I need for a road design in Newcastle?</summary><p>The number depends on the variability of the subgrade. For a uniform formation across a residential estate, three specimens per material type are often sufficient. On brownfield sites with mixed fill, we recommend a minimum of five specimens to capture the range of conditions and to derive a statistically reliable design CBR.</p></details><details><summary>Can you test site-won material for re-use as capping?</summary><p>Yes, we regularly test site-won material for earthworks compliance. The material is compacted in the lab at the target moisture content and density, and the resulting CBR value is used to confirm whether it meets the Series 800 threshold for Class 6 or Class 9 capping.</p></details>
             </section>
 

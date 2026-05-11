@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -99,7 +104,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -108,7 +113,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -123,16 +128,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -195,6 +202,8 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
 
             <section>
                 <h2>Our services</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>A microzonation campaign in Newcastle goes well beyond running a few geophysical lines. It requires integrating existing borehole logs, site-specific shear wave velocity measurements, and dynamic laboratory testing into a coherent ground model that the structural engineer can use directly in a response history or modal analysis. The three core service packages we deliver for local projects are:</p>
                 <style>.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link:hover h3{color:#059669}.servicios-grid a.servicio-link:hover{border-color:#059669;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#059669;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}</style><div class="servicios-grid"><div class="servicio"><h3>Site-Specific Response Spectrum Development</h3><p>We perform one-dimensional equivalent-linear site response analysis (using software like DEEPSOIL or Strata) calibrated with Vs profiles and modulus reduction curves from resonant column tests on undisturbed till samples. Output is a design spectrum and uniform hazard spectrum per BS EN 1998-1, replacing the generic Type 1 spectrum.</p></div><div class="servicio"><h3>Liquefaction Susceptibility and Ground Deformation Assessment</h3><p>For sites overlying Tyne alluvium, we run SPT-based and Vs-based liquefaction triggering analyses following the Boulanger & Idriss (2014) procedure, complemented by CPT soundings for fines content correction. Results feed into lateral spreading and post-liquefaction settlement estimates for foundation design.</p></div><div class="servicio"><h3>Basin Edge and Topographic Amplification Studies</h3><p>Where structures sit near the steep slopes of the Tyne gorge or the Ouseburn valley, we implement two-dimensional finite-element wave propagation models to quantify topographic aggravation factors that Eurocode 8’s flat-ground assumption cannot capture.</p></div></div>
             </section>

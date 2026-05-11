@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -96,7 +101,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -105,7 +110,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -120,16 +125,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"Roadway geotechnics in Newcastle addresses the interaction between pavement structures and the region’s variable superficial deposits, notably glacial till","@id":"https://newcastle.geotechnical-engineering.biz/road-geotechnics/","isPartOf":{"url":"https://newcastle.geotechnical-engineering.biz","@id":"https://newcastle.geotechnical-engineering.biz/#website","@type":"WebSite"},"@type":"WebPage","inLanguage":"en","url":"https://newcastle.geotechnical-engineering.biz/road-geotechnics/","name":"Roadway in Newcastle – UK"},{"itemListElement":[{"name":"Home","item":"https://newcastle.geotechnical-engineering.biz/","@type":"ListItem","position":1},{"name":"Roadway","item":"https://newcastle.geotechnical-engineering.biz/road-geotechnics/","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"CBR study for road design","url":"https://newcastle.geotechnical-engineering.biz/cbr-road/","@type":"ListItem","position":1},{"name":"Flexible pavement design","url":"https://newcastle.geotechnical-engineering.biz/flexible-pavement/","@type":"ListItem","position":2},{"name":"Rigid pavement design","url":"https://newcastle.geotechnical-engineering.biz/rigid-pavement/","@type":"ListItem","position":3}],"@type":"ItemList","name":"Roadway"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../cbr-road/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CBR study for road design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../flexible-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Flexible pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../rigid-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Rigid pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/pavimento-rigido-3.webp" alt="Roadway in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Roadway geotechnics in Newcastle upon Tyne demands a thorough understanding of the region’s varied superficial and solid geology, from glacial till and river terrace deposits of the Tyne Valley to the Coal Measures strata underlying much of the city. A robust ground <a href="/investigation/">investigation</a> is the essential first step, designed in accordance with BS 5930:2015+A1:2020 to characterise these materials and identify hazards such as abandoned mine workings or compressible alluvium. This phase informs pavement design, earthworks specification, and long-term asset resilience, ensuring compliance with the Design Manual for Roads and Bridges (DMRB) and local authority requirements.</p>
+<p>Our field methodology integrates proven in-situ and intrusive techniques to capture critical geotechnical parameters efficiently. <a href="/cpt-test/">Cone Penetration Testing (CPT)</a> provides near-continuous profiling of undrained shear strength and soil behaviour type in soft ground, while dynamic probing can rapidly assess granular fill and shallow made ground. For formation and backfill compliance, we deploy the <a href="/sand-cone-density/">sand cone density method</a> to verify relative compaction in accordance with Clause 8.3 of the SHW Series 600. All <a href="/lab-in-situ/">in-situ testing</a> is calibrated against high-quality samples taken for subsequent analysis in our UKAS-accredited <a href="/laboratory/">laboratory</a>, ensuring a reliable ground model.</p>
+<p>Typical Newcastle roadway projects range from new link roads cutting through Coal Measures mudstone to the widening of historic routes across the Tyne’s floodplain. For schemes on glacial till, <a href="/grain-size/">grain size analysis</a> combining sieving and hydrometer methods quantifies the fines content critical for assessing frost susceptibility and drainage characteristics. Equally, determination of <a href="/atterberg-limits/">Atterberg limits</a> establishes the plasticity range of cohesive subgrade soils, directly informing the design of capping and sub-base layers under DMRB CD 225 to mitigate volume change and softening. This data underpins safe, cost-effective <a href="/foundations/">foundations</a> for bridges, retaining walls, and gantry bases integral to the highway network.</p>
+<img src="/img/ensayo-cpt-5.webp" alt="Roadway in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>A focused, phased approach begins with a desk study and physical reconnaissance, followed by intrusive investigation and targeted testing. The principal deliverable is a comprehensive Geotechnical Design Report, compliant with Eurocode 7 and UK National Annexes, containing interpreted ground parameters, CBR profiles, and clear recommendations for pavement thickness and earthworks classification. This integrated process, from initial probing to final reporting, provides Newcastle’s project developers and highway engineers with the precise subsurface certainty required to de-risk construction, optimise material reuse, and deliver durable transportation infrastructure.</p></div></section></main>
     </div>
 </div>
 

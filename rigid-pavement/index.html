@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -99,7 +104,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -108,7 +113,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -123,16 +128,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
 
             <section>
                 <h2>Critical ground factors in Newcastle</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>BS EN 1997-1 (Eurocode 7) requires that the ground be treated as a construction material, not just a passive support. In Newcastle, ignoring the spatial variability of the glacial till subgrade is the most common cause of rigid pavement failure. A slab designed for a uniform k-value of 50 MPa/m will crack if the actual subgrade varies between 20 and 80 MPa/m across the panel footprint. The team mitigates this by specifying a minimum of one plate bearing test per 500 m² of formation, with additional tests where the till transitions to made ground or coal outcrop. Pumping at joints is another local hazard: fine-grained subgrade soils erode under repeated wheel loads if the joint sealant fails and water penetrates. The design response is a well-graded, free-draining sub-base (Type 1 to SHW Clause 803) and a positive crossfall of 2.5% to shed surface water. Where the pavement crosses a former mining area, the design includes a geogrid-reinforced sub-base to span potential crown holes that could develop from collapse of shallow mine workings.</p>
             </section>
 
@@ -201,6 +210,8 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
 
             <section>
                 <h2>Q&A</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How much does a rigid pavement design cost for a typical industrial yard in Newcastle?</summary><p>For a standard industrial yard or container storage area in the Newcastle area, the design fee ranges from £1,590 to £5,580 depending on the yard size, number of plate bearing tests required, and whether the project involves former mining land requiring additional ground investigation interpretation.</p></details><details><summary>What subgrade conditions in Newcastle create the most problems for concrete pavements?</summary><p>Glacial till is the dominant subgrade across Newcastle and its variability is the main challenge. The till contains lenses of sand, silt, and stiff clay, and the undrained shear strength can shift from 75 kPa to over 200 kPa across a single panel. Made ground from the city's mining and industrial past adds another layer of uncertainty. We map this variability with plate bearing tests and dynamic cone penetrometer soundings before finalising the slab design.</p></details><details><summary>Do you design the joint layout and reinforcement for rigid pavements?</summary><p>Yes, the design package includes a full joint layout plan showing contraction joint spacing, longitudinal joint positions, isolation joints at fixed structures, and the dowel bar schedule. For steel-fibre-reinforced slabs, the fibre dosage and type are specified based on the required residual flexural strength. We also produce the concrete mix specification addressing sulfate class, minimum cement content, and maximum water-cement ratio for the exposure conditions on site.</p></details>
             </section>
 

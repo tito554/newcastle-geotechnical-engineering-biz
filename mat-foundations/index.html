@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -99,7 +104,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -108,7 +113,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -123,16 +128,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
 
             <section>
                 <h2>Critical ground factors in Newcastle</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Newcastle sits at about 54°58’ N and barely 50 m above sea level along the riverside wards, which means two things: a high water table is more rule than exception, and a lot of the flat, developable land near the city centre is built on historic fill—some of it dating back to the industrial expansion of the 1850s. When you put a raft foundation on that kind of profile without a proper desk study and targeted <a data-interlink="1" href="/cpt-test/">CPT testing</a>, you risk differential settlement that can tear through partition walls in the first two years. The other quiet risk is long-term consolidation: even a stiff raft can’t stop a thick layer of alluvial clay from compressing under load, and if the compressible stratum varies in thickness across the footprint, the slab tilts. We model these scenarios explicitly in our design work because fixing a tilted raft after the fact costs more than the foundation itself.</p>
             </section>
 
@@ -201,6 +210,8 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
 
             <section>
                 <h2>Q&A</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>When does a raft foundation make more sense than strip footings in Newcastle?</summary><p>When the near-surface soils are variable or weak—think loose fill, soft alluvium, or shallow mine workings—a raft spreads the building load over the whole footprint instead of concentrating it under walls. This reduces differential settlement and often eliminates the need for deep excavations or extensive ground improvement. We typically recommend a raft once the allowable bearing pressure drops below about 75 kPa, or when the total settlement under isolated footings would exceed 25 mm across the floor plate.</p></details><details><summary>What does a raft foundation design package include?</summary><p>The package covers the geotechnical model (ground profile, design soil parameters), the structural analysis of the slab (bending moments, shear, and deflection under SLS and ULS load combinations), reinforcement detailing to BS EN 1992-1-1, and a settlement assessment that accounts for both immediate and consolidation effects. You also get a construction specification for concrete grade, cover, and sub-base preparation, plus a set of notes for the contractor on excavation and dewatering requirements.</p></details><details><summary>What’s the typical cost range for a raft foundation design in Newcastle?</summary><p>For a single residential plot or small commercial building, the design fee generally runs between £860 and £3,820, depending on the complexity of the ground conditions, the number of column/wall load cases, and whether the job requires a full 3D finite-element model or a simpler Winkler-spring approach. Sites with basements, propped retaining walls, or very poor ground will sit at the upper end of that range because of the extra analysis and detailing involved.</p></details>
             </section>
 

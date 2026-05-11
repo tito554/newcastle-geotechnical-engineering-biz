@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -96,7 +101,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -105,7 +110,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -120,16 +125,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"In-situ testing across Newcastle and the wider North East provides direct geotechnical parameters without the disturbance of sampling and transport. Local","@id":"https://newcastle.geotechnical-engineering.biz/lab-in-situ/","isPartOf":{"url":"https://newcastle.geotechnical-engineering.biz","@id":"https://newcastle.geotechnical-engineering.biz/#website","@type":"WebSite"},"@type":"WebPage","inLanguage":"en","url":"https://newcastle.geotechnical-engineering.biz/lab-in-situ/","name":"In-Situ Testing in Newcastle – UK"},{"itemListElement":[{"name":"Home","item":"https://newcastle.geotechnical-engineering.biz/","@type":"ListItem","position":1},{"name":"In-Situ Testing","item":"https://newcastle.geotechnical-engineering.biz/lab-in-situ/","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"Field density test (sand cone method)","url":"https://newcastle.geotechnical-engineering.biz/sand-cone-density/","@type":"ListItem","position":1}],"@type":"ItemList","name":"In-Situ Testing"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../sand-cone-density/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Field density test (sand cone method)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/permeabilidad-campo-5.webp" alt="In-Situ Testing in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>In-situ testing in Newcastle addresses the specific ground conditions found across the region, from the glacial tills and alluvial deposits of the Tyne Valley to the Coal Measures bedrock. A robust <a href="/investigation/">ground investigation</a> must account for the variable superficial deposits, including potentially soft compressible clays, loose sands, and made ground associated with the city's industrial and mining heritage. Local planning authorities, guided by North East building regulations and the NHBC Standards, mandate thorough site characterisation to mitigate risks from historical coal workings, shallow groundwater, and variable bearing strata. The derived geotechnical parameters directly inform safe and economical foundation design, with <a href="/cpt-test/">cone penetration testing (CPT)</a> providing a continuous profile of soil behaviour, which is particularly valuable for identifying thin drainage layers or weak lenses that could otherwise be missed.</p>
+<p>The methodologies employed adhere strictly to the relevant British Standards, primarily BS 5930 for the code of practice for ground investigations and BS EN ISO 22476 for specific field tests. Standard penetration tests (SPT) are executed at regular intervals within boreholes to assess relative density and consistency, while <a href="/lab-in-situ/">in-situ testing</a> programmes frequently incorporate field vane shear tests in soft to firm cohesive soils to determine undrained shear strength without sample disturbance. For granular compaction control on engineered fill platforms, we perform <a href="/sand-cone-density/">field density testing using the sand cone method</a> in accordance with BS 1377-9, ensuring compliance with the specified relative compaction criteria. These in-situ procedures are complemented by disturbed and undisturbed sampling, where the results from our <a href="/laboratory/">laboratory</a> analysis, including <a href="/atterberg-limits/">Atterberg limits</a> and <a href="/grain-size/">grain size analysis</a>, are used to calibrate and validate the field test interpretations, creating a defensible geotechnical model.</p>
+<p>Typical Newcastle projects demand a flexible approach to in-situ testing. For a multi-storey residential development on a former industrial site near the Quayside, a combination of CPTu probes and exploratory boreholes with in-situ dissipation tests is often specified to assess liquefaction potential in saturated loose sand lenses and to design deep <a href="/foundations/">foundations</a> that bypass compressible alluvium. Conversely, for a warehouse development on the Team Valley, a focused programme of SPTs and plate load tests is typically employed to verify the allowable bearing pressure of the stiff glacial till. Infrastructure commissions, such as slope stability assessments along the steep river valleys, rely heavily on in-situ inclinometer readings and piezometer data to monitor ground movement and pore water pressure over time, directly informing remediation designs that comply with the Eurocode 7 observational method.</p>
+<img src="/img/permeabilidad-campo-5.webp" alt="In-Situ Testing in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process begins with a desk study and a bespoke testing schedule designed to target the specific strata identified in the preliminary risk assessment. Upon completion of fieldwork, we deliver a comprehensive factual report containing all field logs, test data sheets, and installation records, followed by an interpretive report that presents derived geotechnical parameters, characteristic values, and detailed recommendations for earthworks and foundation design. The value lies in the integration of high-quality in-situ data with our accredited laboratory results, reducing the uncertainty inherent in the ground model. This allows project engineers in Newcastle to optimise foundation solutions and earthworks specifications, moving away from conservative assumptions and towards a calibrated design that directly reduces construction risk and cost overruns.</p></div></section></main>
     </div>
 </div>
 

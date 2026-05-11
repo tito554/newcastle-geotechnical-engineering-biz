@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
@@ -96,7 +101,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
     border-left: 2px solid transparent;
 }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-    .content-area { flex-direction: column; }
+    
 .sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
 main section { margin-bottom: 1.5rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
@@ -105,7 +110,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 footer a { color: rgba(255,255,255,0.85); }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -120,16 +125,18 @@ table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9r
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 .servicio:hover { border-color: var(--primary); }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"In Newcastle, our geotechnical laboratory category covers the physical and index testing required to classify soils derived from the region’s complex glaci","@id":"https://newcastle.geotechnical-engineering.biz/laboratory/","isPartOf":{"url":"https://newcastle.geotechnical-engineering.biz","@id":"https://newcastle.geotechnical-engineering.biz/#website","@type":"WebSite"},"@type":"WebPage","inLanguage":"en","url":"https://newcastle.geotechnical-engineering.biz/laboratory/","name":"Laboratory in Newcastle – UK"},{"itemListElement":[{"name":"Home","item":"https://newcastle.geotechnical-engineering.biz/","@type":"ListItem","position":1},{"name":"Laboratory","item":"https://newcastle.geotechnical-engineering.biz/laboratory/","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"Atterberg limits","url":"https://newcastle.geotechnical-engineering.biz/atterberg-limits/","@type":"ListItem","position":1},{"name":"Grain size analysis (sieve + hydrometer)","url":"https://newcastle.geotechnical-engineering.biz/grain-size/","@type":"ListItem","position":2}],"@type":"ItemList","name":"Laboratory"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../atterberg-limits/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Atterberg limits</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../grain-size/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Grain size analysis (sieve + hydrometer)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-triaxial-4.webp" alt="Laboratory in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Accurate laboratory testing forms the backbone of every reliable ground investigation in the Newcastle region, underpinned by the complex glacial and post-glacial geology of the Tyne Valley. Our testing programme is designed to characterise the full range of local soils, from the stiff glacial tills of the Team Valley to the alluvial sands and soft silty clays along the Quayside. We provide a comprehensive suite of index, classification, and strength tests strictly in accordance with UK standards, ensuring compliance with the recommendations of BS 5930 and the Specification for Ground Investigation, second edition. This data is critical for deriving safe and efficient design parameters, directly feeding into our <a href="/foundations/">foundations</a> design recommendations and broader <a href="/investigation/">geotechnical investigation</a> reports.</p>
+<p>Our analytical methodology is rigorously aligned with the current UK standards, primarily BS 1377 (Methods of test for soils for civil engineering purposes) and BS EN ISO 17892 for geotechnical laboratory testing. This ensures every result is traceable and defensible. The process begins with detailed logging and sample selection, followed by moisture content determination and index testing, including <a href="/atterberg-limits/">Atterberg limits</a> to define the plasticity characteristics of fine-grained soils. A fundamental component of any programme is the <a href="/grain-size/">grain size analysis</a>, utilising both sieve and hydrometer methods to produce a full particle size distribution curve. These classification tests are essential for correlating with our <a href="/cpt-test/">Cone Penetration Test (CPT)</a> data and results from other <a href="/lab-in-situ/">in-situ testing</a> methods, creating a robust ground model.</p>
+<p>In Newcastle, the laboratory data we generate is directly applied to a wide range of local projects, each demanding a specific testing regime. For a city centre student accommodation block founded on buried river channel deposits, effective shear strength parameters from triaxial compression tests are vital. Conversely, for a residential development in Gosforth on lodgement till, the emphasis often shifts to long-term consolidation characteristics, measured through oedometer tests, to assess settlement potential. Infrastructure projects, such as the upgrade of the A1, rely heavily on our California Bearing Ratio (CBR) values for pavement design. The interpretation of these results is often validated against field measurements, such as those from a <a href="/sand-cone-density/">field density test using the sand cone method</a>, to ensure the compacted fill meets the specification derived from laboratory compaction curves.</p>
+<img src="/img/granulometria-2.webp" alt="Laboratory in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process delivers a clear, actionable outcome. On completion of the scheduled tests, you receive a factual report containing all raw data sheets, graphical plots, and photographic records. This is followed by an interpretative geotechnical report that evaluates the results, discusses any anomalies, and provides characteristic values for design. The core value proposition is certainty: by investing in a thorough and meticulously executed laboratory testing programme, you de-risk the ground, optimise foundation design, and gain the confidence to proceed with construction, knowing the ground conditions beneath your Newcastle site are no longer an unknown variable.</p></div></section></main>
     </div>
 </div>
 
