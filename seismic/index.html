@@ -178,7 +178,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -189,6 +189,62 @@ body>*{max-width:100vw}
   aside{width:100% !important;position:static !important;height:auto !important}
   .navbar{flex-wrap:wrap}
 }
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
 </style>
 </head>
 <body>
@@ -260,11 +316,11 @@ body>*{max-width:100vw}
             
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
 
+
+<img src="/img/licuefaccion-1.webp" alt="Seismic in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Seismic site investigation in Newcastle addresses the critical need to assess ground behaviour under earthquake loading, despite the UK's low-to-moderate seismicity. This specialist service covers seismic hazard evaluation, liquefaction potential assessment, and dynamic soil property determination across the region's varied geology, from the Carboniferous Coal Measures sandstone and shale underlying the city centre to the Quaternary glacial tills and alluvial deposits along the River Tyne. A thorough understanding of these formations is essential, as soft alluvial silts and loose saturated sands present specific seismic risks. Our approach integrates directly with broader geotechnical <a href="/investigation/">ground investigation</a> scoping, ensuring seismic considerations are embedded from the outset in line with the latest UK standards and Eurocode 8 (BS EN 1998) guidance.</p>
 <p>Our seismic assessment methodology adheres to recognised UK and international standards, principally BS EN 1998-1:2004 and the associated UK National Annex, which provides specific parameters for the British Isles. A fundamental component is the <a href="/cpt-test/">Cone Penetration Test (CPT)</a>, a premier <a href="/lab-in-situ/">In-Situ</a> method for seismic applications. CPTu data, particularly pore pressure dissipation tests, yield high-resolution stratigraphy and direct estimates of cyclic resistance ratios for liquefaction analysis. These findings are calibrated with high-quality <a href="/laboratory/">laboratory</a> testing on undisturbed samples, which may include cyclic triaxial or resonant column tests to measure shear wave velocity and dynamic soil moduli directly. Index testing, such as <a href="/atterberg-limits/">Atterberg limits</a> and <a href="/grain-size/">grain size analysis</a> using sieves and hydrometers, is crucial for classifying fine-grained soils and confirming their susceptibility to cyclic softening, providing a fully integrated ground model.</p>
 <p>In Newcastle, seismic assessments are increasingly specified for a range of projects beyond the obvious high-rise structures. Deep <a href="/foundations/">foundations</a> for quayside developments on the Tyne's alluvial deposits demand rigorous liquefaction analysis to ensure pile integrity during a seismic event. Equally, critical infrastructure such as bridge upgrades, earth embankment stability reviews, and the design of industrial facilities with vibration-sensitive equipment require dynamic site characterisation. The assessment of ground density using methods like the <a href="/sand-cone-density/">sand cone test</a> provides supplementary control on compacted fills, confirming that engineered materials meet the strict relative density specifications often required to mitigate liquefaction potential, forming a key part of the design verification process.</p>
-<img src="/img/licuefaccion-1.webp" alt="Seismic in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>The seismic evaluation process delivers a comprehensive interpretative report, moving from data acquisition to clear engineering design parameters. Key deliverables include seismic site classification, ground response spectra tailored to the site's specific geology, and quantified liquefaction potential index maps. The core value lies in de-risking projects by providing a defensible, standards-compliant ground model that optimises foundation design and satisfies regulatory requirements, ensuring structural resilience for Newcastle's ambitious development pipeline without unnecessary over-engineering.</p></div></section></main>
     </div>
 </div>
@@ -281,7 +337,7 @@ body>*{max-width:100vw}
   L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
     attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
   }).addTo(m);
-  L.marker([54.9738,-1.6132],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("Coverage area — Newcastle");
+  L.marker([54.9738,-1.6132],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(m).bindPopup("Coverage area — Newcastle");
 })();
 </script>
 </div>

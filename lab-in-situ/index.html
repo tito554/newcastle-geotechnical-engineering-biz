@@ -178,7 +178,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -189,6 +189,62 @@ body>*{max-width:100vw}
   aside{width:100% !important;position:static !important;height:auto !important}
   .navbar{flex-wrap:wrap}
 }
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
 </style>
 </head>
 <body>
@@ -260,11 +316,11 @@ body>*{max-width:100vw}
             
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
 
+
+<img src="/img/permeabilidad-campo-5.webp" alt="In-Situ in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>In-Situ in Newcastle addresses the specific ground conditions found across the region, from the glacial tills and alluvial deposits of the Tyne Valley to the Coal Measures bedrock. A robust <a href="/investigation/">ground investigation</a> must account for the variable superficial deposits, including potentially soft compressible clays, loose sands, and made ground associated with the city's industrial and mining heritage. Local planning authorities, guided by North East building regulations and the NHBC Standards, mandate thorough site characterisation to mitigate risks from historical coal workings, shallow groundwater, and variable bearing strata. The derived geotechnical parameters directly inform safe and economical foundation design, with <a href="/cpt-test/">cone penetration testing (CPT)</a> providing a continuous profile of soil behaviour, which is particularly valuable for identifying thin drainage layers or weak lenses that could otherwise be missed.</p>
 <p>The methodologies employed adhere strictly to the relevant British Standards, primarily BS 5930 for the code of practice for ground investigations and BS EN ISO 22476 for specific field tests. Standard penetration tests (SPT) are executed at regular intervals within boreholes to assess relative density and consistency, while <a href="/lab-in-situ/">In-Situ</a> programmes frequently incorporate field vane shear tests in soft to firm cohesive soils to determine undrained shear strength without sample disturbance. For granular compaction control on engineered fill platforms, we perform <a href="/sand-cone-density/">field density testing using the sand cone method</a> in accordance with BS 1377-9, ensuring compliance with the specified relative compaction criteria. These in-situ procedures are complemented by disturbed and undisturbed sampling, where the results from our <a href="/laboratory/">laboratory</a> analysis, including <a href="/atterberg-limits/">Atterberg limits</a> and <a href="/grain-size/">grain size analysis</a>, are used to calibrate and validate the field test interpretations, creating a defensible geotechnical model.</p>
 <p>Typical Newcastle projects demand a flexible approach to In-Situ. For a multi-storey residential development on a former industrial site near the Quayside, a combination of CPTu probes and exploratory boreholes with in-situ dissipation tests is often specified to assess liquefaction potential in saturated loose sand lenses and to design deep <a href="/foundations/">foundations</a> that bypass compressible alluvium. Conversely, for a warehouse development on the Team Valley, a focused programme of SPTs and plate load tests is typically employed to verify the allowable bearing pressure of the stiff glacial till. Infrastructure commissions, such as slope stability assessments along the steep river valleys, rely heavily on in-situ inclinometer readings and piezometer data to monitor ground movement and pore water pressure over time, directly informing remediation designs that comply with the Eurocode 7 observational method.</p>
-<img src="/img/permeabilidad-campo-5.webp" alt="In-Situ in Newcastle" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>Our process begins with a desk study and a bespoke testing schedule designed to target the specific strata identified in the preliminary risk assessment. Upon completion of fieldwork, we deliver a comprehensive factual report containing all field logs, test data sheets, and installation records, followed by an interpretive report that presents derived geotechnical parameters, characteristic values, and detailed recommendations for earthworks and foundation design. The value lies in the integration of high-quality in-situ data with our accredited laboratory results, reducing the uncertainty inherent in the ground model. This allows project engineers in Newcastle to optimise foundation solutions and earthworks specifications, moving away from conservative assumptions and towards a calibrated design that directly reduces construction risk and cost overruns.</p></div></section></main>
     </div>
 </div>
@@ -281,7 +337,7 @@ body>*{max-width:100vw}
   L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
     attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
   }).addTo(m);
-  L.marker([54.9738,-1.6132],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("Coverage area — Newcastle");
+  L.marker([54.9738,-1.6132],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(m).bindPopup("Coverage area — Newcastle");
 })();
 </script>
 </div>
